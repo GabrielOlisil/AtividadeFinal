@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <title>Circular Cores</title>
+</head>
+
+<body>
+    <main class=" px-2 lg:px-0 lg:w-250 m-auto my-10 ">
+
+
+        <div class="max-w-100">
+
+            <div class="mb-3">
+
+                <label class="input w-full">
+                    <span class="label">Nome:</span>
+                    <input type="text" placeholder="Seu nome" />
+                </label>
+            </div>
+
+
+            <div>
+                <div class="join w-full">
+
+                    <label class="input join-item w-full">
+                        <span class="label">Data:</span>
+                        <input type="text" class="input" id="data">
+                    </label>
+                    <button popovertarget="cally-popover1" id="cally1" class=" btn btn-primary join-item cursor-pointer"
+                        style="anchor-name:--cally1">
+                        <i data-lucide="calendar-days"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+        <div popover id="cally-popover1" class="dropdown bg-base-100 rounded-box shadow-lg"
+            style="position-anchor:--cally1">
+            <calendar-date class="cally" id="date-picker">
+                <svg aria-label=" Previous" class="fill-current size-4" slot="previous"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                </svg>
+                <svg aria-label="Next" class="fill-current size-4" slot="next" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                </svg>
+                <calendar-month></calendar-month>
+            </calendar-date>
+        </div>
+
+        <article class="flex flex-wrap-reverse sm:flex-nowrap mt-5 gap-1">
+            <section class=" shrink-0 basis-60 grow  self-stretch mb-4 sm:mb-0">
+                <h2 class="text-accent-content bg-accent px-2 rounded-lg text-lg w-full">Escolha a cor</h2>
+
+                <div class="grid p-1 gap-x-2 grid-cols-4 grid-rows-2 mb-10">
+                    <input type="color" class="row-span-2 w-full h-full " id="color-code">
+
+                    <p class="col-span-3">Código da cor</p>
+                    <p class="col-span-3" id="color-code-field">codigo</p>
+
+                </div>
+
+                <button class="btn w-full btn-success" id="validar">Validar</button>
+
+            </section>
+            <section class="basis-100 grow shrink">
+                <h1 class="text-primary-content bg-primary px-2 rounded-lg text-lg">Quantas sílabas tem?</h1>
+                <section class="p-1">
+                    <h2>Pinte a quantidade de sílabas, ao final, valide sua tentativa</h2>
+
+                    <section class="grid grid-cols-2 md:grid-cols-3 gap-5 " id="itensImagens">
+                        <div>
+                            <div class="skeleton w-ful h-30"></div>
+                            <div class=" text-center">Parafuso</div>
+
+                            <div class="num-silabas display grid grid-cols-4">
+
+                                <div class="text-center" control-value="1">1</div>
+                                <div class="text-center" control-value="2">2</div>
+                                <div class="text-center" control-value="3">3</div>
+                                <div class="text-center" control-value="4">4</div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                </section>
+            </section>
+
+
+
+
+        </article>
+
+        <div role="alert" class="alert alert-info fixed bottom-3 left-2 right-2 hidden" id="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current cursor-pointer"
+                id="close-modal" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="modal-content" style="white-space: pre;" class="font-mono"></span>
+        </div>
+
+        <div class="flex mt-5">
+
+            <a href="index.html" class="btn btn-primary">
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-arrow-left-icon lucide-arrow-left">
+                    <path d="m12 19-7-7 7-7" />
+                    <path d="M19 12H5" />
+                </svg>
+                <span>Atividade Educativa </span>
+            </a>
+
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script type="module" src="/src/scripts/colorir.js"></script>
+</body>
+
+</html>

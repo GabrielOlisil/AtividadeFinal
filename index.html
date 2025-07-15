@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <title>Perfil</title>
+</head>
+
+<body class="bg-base-200 text-base-content min-h-screen sm:p-5">
+  <div class="container mx-auto p-2 ">
+
+    <!-- Perfil -->
+    <section class="mb-10 ">
+
+      <div class="flex flex-wrap items-center gap-4 justify-center bg-base-100 p-8 shadow-lg">
+        <img src="https://github.com/gabrielolisil.png" class="w-40 " alt="imagem de perfil">
+
+        <div class="basis-80 grow">
+
+          <h1 class="text-4xl font-bold mb-4">Gabriel Silva</h1>
+          <p class="text-lg">Desenvolvedor apaixonado por tecnologia, aprendizado contínuo e boas
+            práticas
+            de programação.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="grid sm:grid-cols-2 xl:grid-cols-5 gap-2">
+
+
+      <section class="row-span-2 xl:col-span-2">
+        <article>
+          <h3 class="text-xl divider">Experiencias Profissionais</h3>
+          <ol class="">
+            <li class="">
+              <p class="text-neutral/50 font-bold">2024 - até o momento</p>
+              <section class="ml-10">
+                <strong class="font-bold text-neutral/90">
+                  Técnico de Laboratório - Informática <em>Instituto Federal de
+                    Rondônia</em>
+                </strong>
+                <ul>
+                  <li>
+                    <p>Manutenção em computadores</p>
+                  </li>
+                  <li>
+                    <p>Administração de Servidor de clonagem</p>
+                  </li>
+                  <li>
+                    <p>Infraestrutura de redes</p>
+                  </li>
+                </ul>
+              </section>
+
+            </li>
+            <li class="">
+              <p class="text-neutral/50 font-bold">07-2023 - 09-2023</p>
+              <section class="ml-10">
+                <strong class="font-bold text-neutral/90">Estagiário em
+                  desenvolvimento <em>Divtech Informática</em></strong>
+                <ul>
+                  <li>
+                    <p>Manutenção em sistemas web</p>
+                  </li>
+                  <li>
+                    <p>Operações com Banco de dados</p>
+                  </li>
+                  <li>
+                    <p>Analise de sistemas</p>
+                  </li>
+                </ul>
+              </section>
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <h3 class="mt-5 text-xl divider">Formação acadêmica</h3>
+
+          <ol class="">
+            <li class="">
+              <p class="text-neutral/50 font-bold">2023 - O momento</p>
+              <section class="ml-10">
+                <p class="text-neutral/90 font-bold">Análise e Desenvolvimento de Sistemas <em>Instituto Federal de
+                    Rondônia</em>
+                </p>
+              </section>
+            </li>
+            <li class="">
+              <p class="text-neutral/50 font-bold">2020 - 2022</p>
+              <section class="ml-10">
+                <p class="text-neutral/90 font-bold">Técnico em Informática <em>Instituto Federal de Rondônia</em></p>
+              </section>
+            </li>
+          </ol>
+        </article>
+
+      </section>
+
+
+
+      <section class="xl:col-span-2">
+        <article>
+          <h2 class="text-xl divider">Sobre</h2>
+          <p>
+            Sou técnico em Informática pelo Instituto Federal de Rondônia e, atualmente, curso Análise e Desenvolvimento
+            de Sistemas na mesma instituição. Tenho me dedicado ao estudo de programação web e, mais recentemente,
+            passei a me interessar também pelo funcionamento interno dos sistemas operacionais e o que acontece nos
+            bastidores do software.
+          </p>
+
+        </article>
+
+
+      </section>
+
+      <section>
+
+        <article>
+
+          <h3 class="divider">Conhecimentos</h3>
+
+          <ul>
+            <li>
+              <p>C#/.Net</p>
+            </li>
+            <li>
+              <p>MySql</p>
+            </li>
+            <li>
+              <p>Asp.Net/Blazor</p>
+            </li>
+            <li>
+              <p>Docker</p>
+            </li>
+            <li>
+              <p>Node</p>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h2 class="divider">Hobbies</h2>
+          <ul>
+            <li>Cinema</li>
+            <li>Literatura estrangeira</li>
+            <li>Programação</li>
+            <li>Academia</li>
+            <li>Videogames</li>
+          </ul>
+        </article>
+      </section>
+
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+    <form class="bg-base-100 shadow-lg p-2 sm:p-8 space-y-6 mx-auto mt-20">
+
+      <h2 class="text-2xl font-semibold text-center">Formulário de Contato</h2>
+
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="join join-vertical">
+          <label class="label join-item"><span class="label-text">Nome</span></label>
+          <input type="text" name="nome" class="input w-full join-item" required />
+        </div>
+
+        <!-- Data -->
+        <div class="join join-vertical">
+          <label class="label join-item"><span class="label-text">Data</span></label>
+          <input type="date" name="data" class="input w-full join-item" required />
+        </div>
+
+        <!-- Número -->
+        <div class="join join-vertical">
+          <label class="label join-item"><span class="label-text">Número para contato</span></label>
+
+          <label class="input validator w-full join-item">
+
+            <input type="text" id="input-tel" pattern="\(\d{2}\)( \d \d{4}-\d{4}|\d{4}-\d{4})" name="numero" class=" "
+              required title="Insira um número de telefone válido" />
+          </label>
+          <p class="validator-hint">
+            Insira um Número válido
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Mensagem -->
+      <div class="join join-vertical w-full">
+        <label class="label join-item"><span class="label-text ">Mensagem</span></label>
+        <textarea name="mensagem" class="textarea  join-item w-full" required></textarea>
+      </div>
+
+      <!-- Preferência de Contato (Radio) -->
+      <div class="form-control">
+        <label class="label"><span class="label-text">Forma preferida de contato:</span></label>
+        <div class="flex space-x-4">
+          <label class="label cursor-pointer">
+            <input type="radio" name="contato" value="ligacao" class="radio" required />
+            <span class="label-text ml-2">Ligação</span>
+          </label>
+          <label class="label cursor-pointer">
+            <input type="radio" name="contato" value="whatsapp" class="radio" />
+            <span class="label-text ml-2">WhatsApp</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Assuntos (Select) -->
+      <div class="form-control">
+        <label class="label"><span class="label-text">Assunto</span></label>
+        <select name="assunto" class="select" required>
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="trabalho">Trabalho</option>
+          <option value="parceria">Parceria</option>
+          <option value="feedback">Feedback</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+      <!-- Consentimento (Checkbox) -->
+      <div class="form-control">
+        <label class="label cursor-pointer">
+          <input type="checkbox" name="termos" class="checkbox" required />
+          <p class="text-wrap">Concordo com os termos de contato</p>
+        </label>
+      </div>
+
+      <input type="submit" class="btn btn-primary w-full" value="Enviar" />
+
+    </form>
+
+    <div class="flex justify-end mt-5">
+
+      <a href="colorir.html" class="btn btn-primary">
+        <span>Atividade Educativa </span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-arrow-right-icon lucide-arrow-right">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+  <script src="src/scripts/perfil.js"></script>
+</body>
+
+</html>
