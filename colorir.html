@@ -2,9 +2,8 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -21,7 +20,7 @@
 
                 <label class="input w-full">
                     <span class="label">Nome:</span>
-                    <input type="text" placeholder="Seu nome" />
+                    <input type="text" placeholder="Seu nome">
                 </label>
             </div>
 
@@ -57,7 +56,7 @@
             </calendar-date>
         </div>
 
-        <article class="flex flex-wrap-reverse sm:flex-nowrap mt-5 gap-1">
+        <div class="flex flex-wrap-reverse sm:flex-nowrap mt-5 gap-1">
             <section class=" shrink-0 basis-60 grow  self-stretch mb-4 sm:mb-0">
                 <h2 class="text-accent-content bg-accent px-2 rounded-lg text-lg w-full">Escolha a cor</h2>
 
@@ -77,7 +76,7 @@
                 <section class="p-1">
                     <h2>Pinte a quantidade de sílabas, ao final, valide sua tentativa</h2>
 
-                    <section class="grid grid-cols-2 md:grid-cols-3 gap-5 " id="itensImagens">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-5 " id="itensImagens">
                         <div>
                             <div class="skeleton w-ful h-30"></div>
                             <div class=" text-center">Parafuso</div>
@@ -92,7 +91,7 @@
                         </div>
 
 
-                    </section>
+                    </div>
 
                 </section>
             </section>
@@ -100,7 +99,7 @@
 
 
 
-        </article>
+        </div>
 
         <div role="alert" class="alert alert-info fixed bottom-3 left-2 right-2 hidden" id="modal">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current cursor-pointer"
@@ -130,7 +129,7 @@
     </main>
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <script type="module" src="/src/scripts/colorir.js"></script>
+    <script type="module" src="src/scripts/colorir.js"></script>
 </body>
 
 </html>

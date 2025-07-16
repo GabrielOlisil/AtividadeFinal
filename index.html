@@ -2,9 +2,8 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -14,7 +13,7 @@
 <body class="bg-base-200 text-base-content min-h-screen sm:p-5">
   <div class="container mx-auto p-2 ">
 
-    <section class="mb-10 ">
+    <header class="mb-10 ">
 
       <div class="flex flex-wrap items-center gap-4 justify-center bg-base-100 p-8 shadow-lg">
         <img src="public/profile.jpg" class="w-40 " alt="imagem de perfil">
@@ -27,18 +26,18 @@
             de programação.</p>
         </div>
       </div>
-    </section>
+    </header>
 
-    <article class="grid sm:grid-cols-2 xl:grid-cols-5 gap-2">
+    <main class="grid sm:grid-cols-2 xl:grid-cols-5 gap-2">
 
 
-      <section class="row-span-2 xl:col-span-2">
+      <div class="row-span-2 xl:col-span-2">
         <article>
           <h3 class="text-xl divider">Experiencias Profissionais</h3>
           <ol class="">
             <li class="">
               <p class="text-neutral/50 font-bold">2024 - até o momento</p>
-              <section class="ml-10">
+              <div class="ml-10">
                 <strong class="font-bold text-neutral/90">
                   Técnico de Laboratório - Informática <em>Instituto Federal de
                     Rondônia</em>
@@ -54,12 +53,12 @@
                     <p>Infraestrutura de redes</p>
                   </li>
                 </ul>
-              </section>
+              </div>
 
             </li>
             <li class="">
               <p class="text-neutral/50 font-bold">07-2023 - 09-2023</p>
-              <section class="ml-10">
+              <div class="ml-10">
                 <strong class="font-bold text-neutral/90">Estagiário em
                   desenvolvimento <em>Divtech Informática</em></strong>
                 <ul>
@@ -73,7 +72,7 @@
                     <p>Analise de sistemas</p>
                   </li>
                 </ul>
-              </section>
+              </div>
             </li>
           </ol>
         </article>
@@ -84,26 +83,26 @@
           <ol class="">
             <li class="">
               <p class="text-neutral/50 font-bold">2023 - O momento</p>
-              <section class="ml-10">
+              <div class="ml-10">
                 <p class="text-neutral/90 font-bold">Análise e Desenvolvimento de Sistemas <em>Instituto Federal de
                     Rondônia</em>
                 </p>
-              </section>
+              </div>
             </li>
             <li class="">
               <p class="text-neutral/50 font-bold">2020 - 2022</p>
-              <section class="ml-10">
+              <div class="ml-10">
                 <p class="text-neutral/90 font-bold">Técnico em Informática <em>Instituto Federal de Rondônia</em></p>
-              </section>
+              </div>
             </li>
           </ol>
         </article>
 
-      </section>
+      </div>
 
 
 
-      <section class="xl:col-span-2">
+      <div class="xl:col-span-2">
         <article>
           <h2 class="text-xl divider">Sobre</h2>
           <p>
@@ -116,9 +115,9 @@
         </article>
 
 
-      </section>
+      </div>
 
-      <section>
+      <div>
 
         <article>
 
@@ -153,10 +152,10 @@
             <li>Videogames</li>
           </ul>
         </article>
-      </section>
+      </div>
 
 
-    </article>
+    </main>
 
 
     <form class="bg-base-100 shadow-lg p-2 sm:p-8 space-y-6 mx-auto mt-20">
@@ -167,12 +166,12 @@
 
         <div class="join join-vertical">
           <label class="label join-item"><span class="label-text">Nome</span></label>
-          <input type="text" name="nome" class="input w-full join-item" required />
+          <input type="text" name="nome" class="input w-full join-item" required>
         </div>
 
         <div class="join join-vertical">
           <label class="label join-item"><span class="label-text">Data</span></label>
-          <input type="date" name="data" class="input w-full join-item" required />
+          <input type="date" name="data" class="input w-full join-item" required>
         </div>
 
         <div class="join join-vertical">
@@ -181,7 +180,7 @@
           <label class="input validator w-full join-item">
 
             <input type="text" id="input-tel" pattern="\(\d{2}\)( \d \d{4}-\d{4}|\d{4}-\d{4})" name="numero" class=" "
-              required title="Insira um número de telefone válido" />
+              required title="Insira um número de telefone válido">
           </label>
           <p class="validator-hint">
             Insira um Número válido
@@ -199,11 +198,11 @@
         <label class="label"><span class="label-text">Forma preferida de contato:</span></label>
         <div class="flex space-x-4">
           <label class="label cursor-pointer">
-            <input type="radio" name="contato" value="ligacao" class="radio" required />
+            <input type="radio" name="contato" value="ligacao" class="radio" required>
             <span class="label-text ml-2">Ligação</span>
           </label>
           <label class="label cursor-pointer">
-            <input type="radio" name="contato" value="whatsapp" class="radio" />
+            <input type="radio" name="contato" value="whatsapp" class="radio">
             <span class="label-text ml-2">WhatsApp</span>
           </label>
         </div>
@@ -222,12 +221,12 @@
 
       <div class="form-control">
         <label class="label cursor-pointer">
-          <input type="checkbox" name="termos" class="checkbox" required />
-          <p class="text-wrap">Concordo com os termos de contato</p>
+          <input type="checkbox" name="termos" class="checkbox" required>
+          <span class="text-wrap">Concordo com os termos de contato</span>
         </label>
       </div>
 
-      <input type="submit" class="btn btn-primary w-full" value="Enviar" />
+      <input type="submit" class="btn btn-primary w-full" value="Enviar">
 
     </form>
 
